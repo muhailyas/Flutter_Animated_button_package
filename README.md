@@ -1,39 +1,48 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# animated_button
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A Flutter package that provides a simple and customizable animated button widget.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Getting Started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add `animated_button` as a dependency in your pubspec.yaml file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Dart code:
 
 ```dart
-const like = 'sample';
-```
 
-## Additional information
+import 'package:animated_button/animated_button.dart';
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+AnimatedButton(
+  height: 50.0,
+  width: 150.0,
+  child: Text('Tap Me'),
+  color: Colors.blue,
+  radius: BorderRadius.circular(10.0),
+  onTap: () {
+    // Do something
+  },
+)
+
+The AnimatedButton widget has the following parameters:
+
+height: The height of the button.
+width: The width of the button.
+child: The widget to display inside the button.
+color: The color of the button.
+radius: The border radius of the button.
+onTap: The callback function to execute when the button is tapped.
+The button will animate its size, color, and opacity when tapped.
+
+Features
+Simple and easy to use
+Customizable and flexible
+Smooth and responsive animation
+Dependencies
+This package depends on the following Flutter packages:
+
+flutter
+path_provider
+License
+This package is licensed under the MIT license.
